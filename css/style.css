@@ -1,0 +1,91 @@
+#contenedor{
+	width: 1000px;
+	height:auto;
+	margin: auto;
+	position: relative;
+}
+
+body{
+	background-image: url(../imagenes/FondoBlanco.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h2{
+	font-family: verdana;
+	color: #004669;
+	margin-left: 20px;
+	font-size: 40px;
+	text-align: center;
+}
+
+h3{
+	font-family: verdana;
+	color: white;
+	margin-left: 20px;
+	font-size: 20px;
+	text-align: left;
+}
+
+header{
+	width: 1024px;
+	height: 512px;
+}
+nav{
+	width: 1017px;
+	height: 60px;
+	background: #ffffff;
+	border: solid;
+	border-color: #004669;	
+	border-radius:  10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+ul{
+	margin: auto;
+	padding-top: 4px;
+}
+li{
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	margin: 4px;
+
+
+}
+a{
+	text-decoration: none;
+	font-size: 25px;
+	color: #004669;
+}
+section{
+	width: 1024px;
+	background: white;
+	height: 600px;
+	float: left;
+	margin-top: 20px;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+
+footer{
+	width: 1024px;
+	height: 100px;
+	background: #004669;
+	float: left;
+	margin-top: 20px;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	margin-bottom: 20px;
+}
+p{
+	font-size: 20px;
+	font-weight: bolder;
+	line-height: 24px;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right:10px;
+}
