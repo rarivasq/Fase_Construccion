@@ -31,6 +31,7 @@ header{
 	width: 1024px;
 	height: 512px;
 }
+
 nav{
 	width: 1017px;
 	height: 60px;
@@ -41,27 +42,29 @@ nav{
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 }
+
 ul{
 	margin: auto;
 	padding-top: 4px;
 }
+
 li{
 	float: left;
 	list-style-type: none;
 	padding: 10px;
 	margin: 4px;
-
-
 }
+
 a{
 	text-decoration: none;
 	font-size: 25px;
 	color: #004669;
 }
+
 section{
 	width: 1024px;
 	background: white;
-	height: 600px;
+	height: auto;
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;
@@ -69,6 +72,17 @@ section{
 	border-top-left-radius: 0;
 }
 
+aside{
+	width: 280px;
+	background: white;
+	height: 600px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
 
 footer{
 	width: 1024px;
@@ -81,6 +95,7 @@ footer{
 	border-top-left-radius: 0;
 	margin-bottom: 20px;
 }
+
 p{
 	font-size: 20px;
 	font-weight: bolder;
@@ -88,4 +103,14 @@ p{
 	text-align: justify;
 	margin-left: 10px;
 	margin-right:10px;
+}
+
+#col1 {
+float: center;
+width: auto;
+}
+
+#col2 {
+float: right;
+width: auto; 
 }
