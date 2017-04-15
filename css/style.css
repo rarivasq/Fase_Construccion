@@ -75,7 +75,7 @@ section{
 aside{
 	width: 280px;
 	background: white;
-	height: 600px;
+	height: 650px;
 	float: left;
 	margin-left: 20px;
 	margin-top: 20px;
@@ -103,14 +103,4 @@ p{
 	text-align: justify;
 	margin-left: 10px;
 	margin-right:10px;
-}
-
-#col1 {
-float: center;
-width: auto;
-}
-
-#col2 {
-float: right;
-width: auto; 
 }
