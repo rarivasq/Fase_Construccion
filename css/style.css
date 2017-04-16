@@ -1,5 +1,5 @@
 #contenedor{
-	width: 1000px;
+	width: 1024px;
 	height:auto;
 	margin: auto;
 	position: relative;
@@ -15,16 +15,17 @@ h2{
 	font-family: verdana;
 	color: #004669;
 	margin-left: 20px;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 }
 
-h3{
+footer p{
 	font-family: verdana;
+    font-weight: bold;
 	color: white;
 	margin-left: 20px;
-	font-size: 20px;
-	text-align: left;
+	font-size: 16px;
+	text-align: center;
 }
 
 header{
@@ -33,55 +34,80 @@ header{
 }
 
 nav{
-	width: 1017px;
-	height: 60px;
+	width: 1020px;
+	height: 60px;    
 	background: #ffffff;
-	border: solid;
-	border-color: #004669;	
+	border: solid 2px #004669;		
 	border-radius:  10px;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 }
 
-ul{
-	margin: auto;
-	padding-top: 4px;
+nav ul{/*USAMOS FLEXBOX PARA QUE SE AJUSTE UNA AL LADO DE OTRA DE MANERA RESPONSIVA, DIFERENTE A INLINE-BLOCK COMO SE USABA ANTES, SE JUSTIFICA A LA DERECHA Y SE QUITAN LOS PUNTOS DE LAS LISTAS*/
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    padding: 0px;
+}
+nav ul li a{/*COLOR BLANCO, ENLACE SIN SUBRAYADO, EN FORMA DE BLOQUE PARA QUE SE AJUSTE A LA CAPA Y UNA MARGEN DE 1.5 EN PORCENTAJE RESPECTO AL TAMAÑO DE LETRA POR DEFECTO*/
+    /*color: #fff;
+    text-decoration: none;*/
+    display: block;
+    /*margin: 1.5rem;            */
+}
+nav ul li:hover ul{
+    opacity: 1;/*
+    transform: translateX(0%);*/
+}
+nav ul li ul{
+    display:block;
+    background: #FFF;
+    padding: 0;
+    border: solid 2px #004669;	
+	border-radius:  10px;
+    border-top: 0;	
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;    
+    position: absolute;
+    opacity: 0;
+    top:573.8px;
+    transform: translateX(0%);    
+    transition: all .6s;
 }
 
-li{
-	float: left;
-	list-style-type: none;
-	padding: 10px;
-	margin: 4px;
+nav ul li ul li a{
+    margin: 5px 20px;
 }
 
 a{
 	text-decoration: none;
 	font-size: 25px;
-	color: #004669;
+	color: #004669;    
 }
 
 section{
-	width: 1024px;
-	background: white;
+	width: 70%;
+	background: #fff;
 	height: auto;
 	float: left;
 	margin-top: 20px;
-	border-radius: 10px;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
+	border-radius: 10px;	
 }
 
 aside{
-	width: 280px;
-	background: white;
+	/*width: 100%px;
+	background: #fff;    
 	height: 650px;
 	float: left;
 	margin-left: 20px;
 	margin-top: 20px;
 	border-radius: 10px;
 	border-top-right-radius: 0;
-	border-top-left-radius: 0;
+	border-top-left-radius: 0;*/
+    margin-top: 20px;
+    width: 26%;
+    float: left;
+    margin-left: 4%;
 }
 
 footer{
@@ -104,3 +130,9 @@ p{
 	margin-left: 10px;
 	margin-right:10px;
 }
+h5{
+	font-family: verdana;
+	color: white;
+	margin-left: 20px;
+	font-size: 16px;
+	text-align: center;

@@ -1,81 +1,129 @@
-﻿<!DOCTYPE html>
-		<html lang="es">
-		<head>
-			<meta charset="UTF-8">
-			<meta content=" Fase Construccion"= name= "description">
-			<meta content="UNAD, diseño web, html, OVI" name="keywords">
-			<title>Trabajo colaborativo fase contruccion</title>
-			<link rel="stylesheet" href="css/style.css">
-		</head>
-		<body>
-			
-			<div id="contenedor">
-
-				<header>
-					<img src="imagenes/UNAD-INICIO.png" alt="header">
-				</header>
-				<nav>
-					<ul>
-						<li><a href="index.html">INICIO</a></li>
-						<li><a href="lecturas.html">LECTURAS</a></li>
-						<li><a href="multimedia.html">MULTIMEDIA</a></li>
-						<li><a href="actividades.html">ACTIVIDADES</a></li>
-						<li><a href="autores.html">AUTORES</a></li>
-					</ul>
-
-				</nav>
-				<section>
-					<article>
-						<h2>Autoevaluación</h2>
-						<figure align="center">
-							<img src="imagenes/Autoevaluación.jpg" alt="Autoevaluación" border="1">
-						</figure>
-							
-								
-									<p>Según el alcance geográfico, las redes pueden clasificarse en:</p>
-
-									  <dd> A.Arpanet, Internet</dd>
-									  <dd> B.Topología anillo, bus, estrella, malla.</dd>
-									  <dd> C.Ninguna de las anteriores.</dd>
-									  <dd> D.Redes LAN, WAN, MAN, redes de Campus.</dd>
-
-									<p>Los componentes fundamentales de Internet son:</p>
-
-									 <dd> A    Cables, fibra óptica, satélites, antenas</dd>
-									 <dd> B.    Host, dirección IP, Dominio y Servidor de dominio, una dirección en Internet.</dd>
-									 <dd> C.    tarjetas de red, sistemas operativos</dd>
-									 <dd> D   Ninguna de las anteriores.</dd>
-
-									<p>Es un Servicio que Comprende la navegación en Internet a través de páginas en formato de hipertexto, de manera que con un clic del ratón nos transporta a otras páginas relacionadas.</p>
-
-									 <dd>A. Correo Electrónico</dd>
-									 <dd>  B.    Chat</dd>
-									 <dd> C.   Redes NT</dd>
-									 <dd> D.    La World Wide Web(WWW)</dd>
-									
-									<p>Es un conjunto de programas, procedimientos, documentos y datos asociados a un sistema de computación con la finalidad de dar solución a un problema, ejecutar una actividad en forma automática o satisfacer requerimientos de un conjunto de usuarios.</p>
-
-									 <dd>A. Hardware</dd>
-									 <dd> B. Redes</dd>
-									 <dd> C. Software</dd>
-									 <dd> D. Ninguno de los anteriores.</dd>
-
-									<p>Cual es el Sistema operativo que actualmente usas en el laboratorio:</p>
-
-									 <dd> A.Linux.</dd>
-									 <dd> B. MS-DOS</dd>
-									 <dd>C.   Unix</dd>
-									 <dd>D.   Windows</dd>
-								
-							
-					</article>					
-				</section>
-				
-				<footer>
-					<h3>Sitio web diseñado por estudiantes de la UNAD para el curso "Diseño de Sitios Web"</h3>
-				</footer>
-			</div>
-		</body>
-		<script src="js/modernizr.js"></script>
-		<script src="js/prefixfree.js"></script>
-		</html>		
+<!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta content=" Fase Construccion"= name= "description">
+            <meta content="UNAD, diseño web, html, OVI" name="keywords">
+            <title>Trabajo colaborativo fase contruccion</title>
+            <link rel="stylesheet" href="css/style.css">			
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+                <script>
+            $(document).ready(function(){               
+                $("#exam").on('submit', function(e){
+                    e.preventDefault();                    
+                    var tot = 0;
+                    var r = [];
+                    r[0] = $("[name='q1']:checked").val();
+                    r[1] = $("[name='q2']:checked").val();
+                    r[2] = $("[name='q3']:checked").val();
+                    r[3] = $("[name='q4']:checked").val();
+                    r[4] = $("[name='q5']:checked").val();                       
+                    for(i=0;i<5;i++){
+                        if(i==3){
+                            if(r[i]=="c"){
+                                tot = parseInt(tot) + 1;
+                            }
+                        } else {
+                            if(r[i]=="d"){
+                                tot = parseInt(tot) + 1;
+                            }
+                        }
+                    }
+                    alert("SU CALIFICACION ES: "+tot+" PUNTOS DE 5");                    
+                });              
+            });
+        </script>
+    </head>
+    <body>			
+        <div id="contenedor">
+        <header>
+                    <img src="imagenes/UNAD-INICIO.png" alt="header">
+                </header>            
+            <nav>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li>
+                            <a href="lecturas.html">LECTURAS</a>
+                            <ul>
+                                <li><a href="introduccion.html">Introduccion</a></li>
+                                <li><a href="Amenazas.html">Amenazas</a></li>
+                                <li><a href="principios.html">Principios Básicos I</a></li>
+                                <li><a href="principios2.html">Principios Básicos II</a></li>
+                                <li><a href="riesgos.html">Recomendaciones</a></li>
+                            </ul>                          
+                        </li>
+                        <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                        <li><a href="actividades.html">ACTIVIDADES</a></li>
+                        <li><a href="autores.html">AUTORES</a></li>
+                    </ul>
+                </nav>
+            <section>
+                <article>
+                        <h2>Autoevaluación</h2>
+                        <figure align="center">
+                            <img src="imagenes/Autoevaluación.jpg" alt="Autoevaluación" border="1">
+                        </figure>                   
+                    <form name="exam" id="exam">
+                        <p>¿Según el alcance geográfico, las redes pueden clasificarse en?</p>
+                        <input checked name="q1" type="radio" value="a" /> 
+                        <dd>A.Arpanet, Internet</dd>
+                        <input name="q1" type="radio" value="b" /> 
+                        <dd> B.Topología anillo, bus, estrella, malla.</dd>
+                        <input name="q1" type="radio" value="c" /> 
+                        <dd> C.Ninguna de las anteriores.</dd>
+                        <input name="q1" type="radio" value="d" /> 
+                        <dd> D.Redes LAN, WAN, MAN, redes de Campus.</dd>
+                        <hr>
+                        <p>¿Los componentes fundamentales de Internet son?</p> 
+                        <input checked name="q2" type="radio" value="a" /> 
+                        <dd> A. Cables, fibra óptica, satélites, antenas</dd>
+                        <input name="q2" type="radio" value="b" /> 
+                        <dd> B. Host, dirección IP, Dominio y Servidor de dominio, una dirección en Internet.</dd>
+                        <input name="q2" type="radio" value="c" /> 
+                        <dd> C. Tarjetas de red, sistemas operativos</dd>
+                        <input name="q2" type="radio" value="d" /> 
+                        <dd> D. Ninguna de las anteriores.</dd>
+                        <hr>
+                        <p>Es un Servicio que Comprende la navegación en Internet a través de páginas en formato de hipertexto, de manera que con un clic del ratón nos transporta a otras páginas relacionadas.</p> 
+                        <input checked name="q3" type="radio" value="a" /> 
+                        <dd>A. Correo Electrónico</dd>
+                        <input name="q3" type="radio" value="b" /> 
+                        <dd> B. Chat</dd>
+                        <input name="q3" type="radio" value="c" /> 
+                        <dd> C. Redes NT</dd>
+                        <input name="q3" type="radio" value="d" /> 
+                        <dd> D. La World Wide Web(WWW)</dd>
+                        <hr>
+                        <p>Es un conjunto de programas, procedimientos, documentos y datos asociados a un sistema de computación con la finalidad de dar solución a un problema, ejecutar una actividad en forma automática o satisfacer requerimientos de un conjunto de usuarios.</p>
+                        <input checked name="q4" type="radio" value="a" /> 
+                        <dd>A. Hardware</dd>
+                        <input name="q4" type="radio" value="b" /> 
+                        <dd> B. Redes</dd>
+                        <input name="q4" type="radio" value="c" /> 
+                        <dd> C. Software</dd>
+                        <input name="q4" type="radio" value="d" /> 
+                        <dd> D. Ninguno de los anteriores.</dd>
+                        <hr>
+                        <p>¿Cual es el Sistema operativo que actualmente usas en el laboratorio?</p>
+                        <input checked name="q5" type="radio" value="a" /> 
+                        <dd> A.Linux.</dd>
+                        <input name="q5" type="radio" value="b" /> 
+                        <dd> B. MS-DOS</dd>
+                        <input name="q5" type="radio" value="c" /> 
+                        <dd>C. Unix</dd>
+                        <input name="q5" type="radio" value="d" /> 
+                        <dd>D. Windows</dd>
+                        <hr>
+                        <input type="submit" value="Enviar...">
+                    </form>
+                </article>
+            </section>
+            <aside>
+                   <a data-height="500" class="twitter-timeline" href="https://twitter.com/universidadunad">Universidad UNAD Tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </aside>
+            <footer>
+                <h5>Sitio web diseñado por estudiantes de la UNAD para el curso "Diseño de Sitios Web"</h5>
+            </footer>
+        </div>
+    </body>    
+</html>		
