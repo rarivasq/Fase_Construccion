@@ -81,7 +81,7 @@ nav ul li ul li a{
 
 a{
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 20px;
 	color: #004669;    
 }
 
@@ -123,8 +123,8 @@ footer{
 }
 
 p{
-	font-size: 20px;
-	font-weight: bolder;
+	font-size: 20px;/*
+	font-weight: bolder;*/
 	line-height: 24px;
 	text-align: justify;
 	margin-left: 10px;
